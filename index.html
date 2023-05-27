@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Roo Burguer</title>
+    </head>
+    <body>
+        <header>
+            <h1>Pedido de Hamburguesas</h1>
+            <div>
+                <h2>Productos y Precios</h2>
+                <ul>
+                    <li>Combo 1 (Hamburguesa + Papas + Gaseosa) - $480.00</li>
+                    <li>Combo 2 (Hamburguesa Doble + Papas + Gaseosa) - $560.00</li>
+                    <li>Pan - $75.00</li>
+                    <li>Hamburguesa - $80.00</li>
+                    <li>Lechuga - $40.00</li>
+                    <li>Tomate - $60.00</li>
+                    <li>Queso - $70.00</li>
+                    <li>Panceta - $90.00</li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div id="formulario">
+                <h2>Arma tu hamburguesa</h2>
+                <div>
+                    <label for="cantidad-pan">Cantidad de pan:</label>
+                    <input type="number" id="cantidad-pan" min="0" value="0">
+                </div>
+                <div>
+                    <label for="cantidad-hamburguesas">Cantidad de hamburguesas:</label>
+                    <input type="number" id="cantidad-hamburguesas" min="0" value="0">
+                </div>
+                <div>
+                    <label for="cantidad-lechuga">Cantidad de lechuga:</label>
+                    <input type="number" id="cantidad-lechuga" min="0" value="0">
+                </div>
+                <div>
+                    <label for="cantidad-tomate">Cantidad de tomate:</label>
+                    <input type="number" id="cantidad-tomate" min="0" value="0">
+                </div>
+                <div>
+                <label for="cantidad-queso">Cantidad de queso:</label>
+                <input type="number" id="cantidad-queso" min="0" value="0">
+                </div>
+                <div>
+                <label for="cantidad-panceta">Cantidad de panceta:</label>
+                <input type="number" id="cantidad-panceta" min="0" value="0">
+                </div>
+                <button id="armar">Armar hamburguesa</button>
+            </div>
+            <div id="combos">
+                <h2>Combos</h2>
+                <button id="combo1">Combo 1 (Hamburguesa + Papas + Gaseosa)</button>
+                <button id="combo2">Combo 2 (Hamburguesa Doble + Papas + Gaseosa)</button>
+            </div>
+            <div id="pedido" style="display: none;">
+                <h2>Tu pedido:</h2>
+                <ul id="lista-pedido"></ul>
+                <p>Total: $<span id="total"></span></p>
+                <button id="volver">Volver</button>
+                <button id="confirmar">Confirmar pedido</button>
+                <button id="eliminar-ultimo">Eliminar Último</button>
+                <button id="limpiar-carrito">Limpiar Carrito</button>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+
